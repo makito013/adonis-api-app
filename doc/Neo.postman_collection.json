@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "2b0e34f5-78ff-4429-99b5-72b10bf25b5e",
+		"name": "Neo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pessoa",
+			"item": [
+				{
+					"name": "Pessoas/List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"nome\":\"Alan\",\n\"qualquerparte\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3333/Pessoa/List",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"Pessoa",
+								"List"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":\"alan\",\"password\":\"123456\"}"
+						},
+						"url": {
+							"raw": "http://localhost:3333/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":\"alan\",\"password\":\"123456\"}"
+								},
+								"url": {
+									"raw": "http://localhost:3333/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3333",
+									"path": [
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9337"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Mar 2020 21:23:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"retorno\": true,\n    \"mensagem\": \"login ok\",\n    \"token\": \"22cd901ffa9dd8e40f50acdab1e5568dozIDWxx4qCpCT0FXvb4qPhK4HxRWyH86gzP8ZfwA/DN+VRHdmPsU3fVF/m0vOWx1LVPCb9s6l9Yzk217/ASXEtkgI5+mvd5tKOKkuuVfLyKMFuY4mA72FGJSZTqFp8Hl8/aiEHEzC5e9khgyrbAPRA==\",\n    \"permissoes\": {\n        \"permissaogerenciaacesso\": [\n            {\n                \"CodPermissaoGerenciaAcesso\": 15,\n                \"CodUsuario\": 17050,\n                \"CodLocalAcesso\": 3\n            },\n            {\n                \"CodPermissaoGerenciaAcesso\": 16,\n                \"CodUsuario\": 17050,\n                \"CodLocalAcesso\": 6\n            }\n        ],\n        \"permissaogerenciaacessoall\": false,\n        \"Permissaogerencia\": [\n            {\n                \"CodEmpresa\": null,\n                \"CodLotacao\": null,\n                \"CodSecao\": null\n            }\n        ],\n        \"Permissaogerenciaall\": true,\n        \"locaisPermitidos\": [\n            {\n                \"CodLocalAcesso\": 3,\n                \"Nome\": \"ADMINISTRAÇÃO\"\n            },\n            {\n                \"CodLocalAcesso\": 6,\n                \"Nome\": \"CADASTRO DE PRESTADOR DE SERVIÇOS\"\n            }\n        ]\n    },\n    \"categoria\": [\n        {\n            \"CodCategoriaPessoa\": 1,\n            \"Nome\": \"Visitante\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 2,\n            \"Nome\": \"MORADOR / PROPRIETARIO\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 3,\n            \"Nome\": \"DELIVERY\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 4,\n            \"Nome\": \"PRESTADOR DE SERVIÇO\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 5,\n            \"Nome\": \"Doméstico\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 6,\n            \"Nome\": \"MOTORISTA DE CONDÔMINO\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 7,\n            \"Nome\": \"FUNCIONARIO  DE CONDÔMINOS\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 8,\n            \"Nome\": \"CADASTRO PESSOAS BLOQUEADAS\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 9,\n            \"Nome\": \"PRESTADOR DE SERVIÇO A LONGO PRAZO\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 10,\n            \"Nome\": \"Vi\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 11,\n            \"Nome\": \"PROPRIETARIOS\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 12,\n            \"Nome\": \"PR\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 13,\n            \"Nome\": \"ESPOSA\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 14,\n            \"Nome\": \"FUNCIONÁRIOS CONDOMINIO CPEA\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 15,\n            \"Nome\": \"ADMINISTRADOR\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 16,\n            \"Nome\": \"GERENTE DE INFRAESTRUTURA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 17,\n            \"Nome\": \"CHEFE DE SEGURANCA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 18,\n            \"Nome\": \"COORDENADORA FINANCEIRA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 19,\n            \"Nome\": \"SUPERVISOR SENIOR\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 20,\n            \"Nome\": \"SUPERVISOR SEGURANCA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 21,\n            \"Nome\": \"SUPERVISOR DE CAMPO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 22,\n            \"Nome\": \"PORTEIRO LIDER\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 23,\n            \"Nome\": \"VIGIA MOTORIZADO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 24,\n            \"Nome\": \"PORTEIRO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 25,\n            \"Nome\": \"SALVA VIDAS\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 26,\n            \"Nome\": \"AUX. ASSISTENTE DE SETOR PESSOAL\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 27,\n            \"Nome\": \"AUX.TECNICO DE ELETRONICA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 28,\n            \"Nome\": \"AUX.ENCARREGADO SERVIÇOS GERAIS\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 29,\n            \"Nome\": \"AUX.ADMINISTRATIVO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 30,\n            \"Nome\": \"ASSISTENTE ADMINISTRATIVO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 31,\n            \"Nome\": \"ASSISTENTE ADMINISTRATIVO -1\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 32,\n            \"Nome\": \"CHEFE DE EQUIPE DE TRANSPORTES\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 33,\n            \"Nome\": \"CABO DE TURMA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 34,\n            \"Nome\": \"OPERADOR DE MAQUINA PLENA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 35,\n            \"Nome\": \"SERVENTE\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 36,\n            \"Nome\": \"OPERADOR DE MAQUINA JUNIOR\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 37,\n            \"Nome\": \"PEDREIRO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 38,\n            \"Nome\": \"SERRALHEIRO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 39,\n            \"Nome\": \"PINTOR\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 40,\n            \"Nome\": \"PISCINEIRO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 41,\n            \"Nome\": \"MOTO-BOY\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 42,\n            \"Nome\": \"SECRETARIA EXECUTIVA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 43,\n            \"Nome\": \"MOTORISTA\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 44,\n            \"Nome\": \"FILHO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 45,\n            \"Nome\": \" IRMÃO (Ã)\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 46,\n            \"Nome\": \"AVÓS\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 47,\n            \"Nome\": \"PRIMO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 48,\n            \"Nome\": \"TIO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 49,\n            \"Nome\": \"CUNHADO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 50,\n            \"Nome\": \"SOBRINHO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 51,\n            \"Nome\": \"INQUILINO (A)\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 52,\n            \"Nome\": \"NOIVO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 53,\n            \"Nome\": \"SECRETARIA\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 54,\n            \"Nome\": \"CASEIRO\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 55,\n            \"Nome\": \"MOTORISTA\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 56,\n            \"Nome\": \"BABÁ\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 57,\n            \"Nome\": \"ADMINISTRADOR ( A )\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 58,\n            \"Nome\": \"GOVERNANTA RESIDENCIAL\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 59,\n            \"Nome\": \"COZINHEIRA\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 60,\n            \"Nome\": \"DISTRIBUIDOR DE PRODUTOS FARMACEUTICO\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 61,\n            \"Nome\": \"PRONTUARIO HOSPITALAR\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 62,\n            \"Nome\": \"DISTRIBUIDOR DE AGUA\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 63,\n            \"Nome\": \"DISTRIBUIDOR DE GAS\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 64,\n            \"Nome\": \"DISTRIBUIDOR DE PIZZA E ALIMENTOS\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 65,\n            \"Nome\": \"DISTRIBUIDOR DE FLORICULTURA\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 66,\n            \"Nome\": \"DISTRIBUIDOR DE BATERIAS PARA VEICULOS\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 67,\n            \"Nome\": \"ATENDIMENTO GUINCHO/ REBOQUE\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 68,\n            \"Nome\": \"ATENDIMENTO ORGÃO FEDERAL E FORÇAS AUXILIARES/ PM/PC\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 69,\n            \"Nome\": \"ATENDIMENTO CONCESSIONARIA COELBA\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 70,\n            \"Nome\": \"ATENDIMENTO CONCESSIONARIA EMBASA\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 71,\n            \"Nome\": \"SEGURANÇA PROSEVIG\",\n            \"CodCategoriaSuperior\": 9\n        },\n        {\n            \"CodCategoriaPessoa\": 72,\n            \"Nome\": \"MONITOR II\",\n            \"CodCategoriaSuperior\": 9\n        },\n        {\n            \"CodCategoriaPessoa\": 73,\n            \"Nome\": \"PORTEIRO LIDER I\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 74,\n            \"Nome\": \"SECRETARIA DO LAR\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 75,\n            \"Nome\": \"CUIDADORA DE IDOSO\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 76,\n            \"Nome\": \"GENRO\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 77,\n            \"Nome\": \"NORA\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 78,\n            \"Nome\": \"NETO ( A )\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 79,\n            \"Nome\": \"ESPOSA DO CASEIRO\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 80,\n            \"Nome\": \"JARDINEIRO\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 81,\n            \"Nome\": \"JARDINEIRO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 82,\n            \"Nome\": \"PAI\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 83,\n            \"Nome\": \"MÃE\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 84,\n            \"Nome\": \"SOGRO (A)\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 85,\n            \"Nome\": \"DISTRIBUIDOR DE PRODUTOS VETERINARIO\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 86,\n            \"Nome\": \"ENCANADOR\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 87,\n            \"Nome\": \"GERENTE ADMINISTRATIVO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 88,\n            \"Nome\": \"PROFESSOR DE NATAÇÃO\",\n            \"CodCategoriaSuperior\": 14\n        },\n        {\n            \"CodCategoriaPessoa\": 89,\n            \"Nome\": \"PROFESSOR DE NATAÇÃO\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 90,\n            \"Nome\": \"PISCINEIRO\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 91,\n            \"Nome\": \"ENTREGA DE ROUPA LAVANDERIA\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 92,\n            \"Nome\": \"AMIGO DO MORADOR\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 93,\n            \"Nome\": \"ENGENHEIRO DA OBRA\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 94,\n            \"Nome\": \"ARQUITETO DA OBRA\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 95,\n            \"Nome\": \"ESPOSO\",\n            \"CodCategoriaSuperior\": 2\n        },\n        {\n            \"CodCategoriaPessoa\": 96,\n            \"Nome\": \"SEGURANÇA DO MORADOR\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 97,\n            \"Nome\": \"BOLEIRO\",\n            \"CodCategoriaSuperior\": 4\n        },\n        {\n            \"CodCategoriaPessoa\": 98,\n            \"Nome\": \"BOLEIRO QUADRA DE TENIS\",\n            \"CodCategoriaSuperior\": 3\n        },\n        {\n            \"CodCategoriaPessoa\": 99,\n            \"Nome\": \"PROFESSOR DE TENIS\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 100,\n            \"Nome\": \"FISIOTERAPEUTA\",\n            \"CodCategoriaSuperior\": 4\n        },\n        {\n            \"CodCategoriaPessoa\": 101,\n            \"Nome\": \"ESPOSO DA SECRETARIA\",\n            \"CodCategoriaSuperior\": 7\n        },\n        {\n            \"CodCategoriaPessoa\": 102,\n            \"Nome\": \"TOPÓGRAFO\",\n            \"CodCategoriaSuperior\": 4\n        },\n        {\n            \"CodCategoriaPessoa\": 103,\n            \"Nome\": \"PSICOLOGO ( A )\",\n            \"CodCategoriaSuperior\": 4\n        },\n        {\n            \"CodCategoriaPessoa\": 104,\n            \"Nome\": \"MASSAGISTA\",\n            \"CodCategoriaSuperior\": 4\n        },\n        {\n            \"CodCategoriaPessoa\": 105,\n            \"Nome\": \"PERSONAL TRAINER\",\n            \"CodCategoriaSuperior\": 4\n        },\n        {\n            \"CodCategoriaPessoa\": 106,\n            \"Nome\": \"Aluno\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 107,\n            \"Nome\": \"Medico\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 108,\n            \"Nome\": \"Medico\",\n            \"CodCategoriaSuperior\": 107\n        },\n        {\n            \"CodCategoriaPessoa\": 109,\n            \"Nome\": \"DESENVIIIIII\",\n            \"CodCategoriaSuperior\": null\n        },\n        {\n            \"CodCategoriaPessoa\": 110,\n            \"Nome\": \"QERRQW\",\n            \"CodCategoriaSuperior\": null\n        }\n    ]\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "HIstoricoAcesso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dataInicio\":\"2018-03-16\",\"dataFim\":\"2020-02-04\",\"horaInicio\":\"00:00:00\",\"horaFim\":\"23:59:00\",\"tentativaAcesso\":true,\"dadosVeiculos\":true,\"apenasAutorizado\":false,\"pessoaVisitada\":false,\"token\":\"I9qEGH1nIwM8pF5Wt7Qg==\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/Relatorio/HistoricoAcesso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"Relatorio",
+						"HistoricoAcesso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DevoluçãoIndetificador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cmd\":\"identificadorNaoDevolvido\",\n\t\"dataInicio\":\"2019-02-02\",\n\t\"dataFim\":\"2020-02-02\",\n\t\"itensbusca\":{\n\t\t\t\t\t\"empresav\":\"\",\n\t\t\t\t\t\"lotacaov\":\"125\",\n\t\t\t\t\t\"pessoav\":\"28930,28944\",\n\t\t\t\t\t\"secaov\":\"1450,1445,1453,1481,1426,1455\"\n\t\t\n\t},\n\t\"token\":\"X1IkIbd6/w/09o1BIy56Kw==\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/Relatorio/DevolucaoCartao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"Relatorio",
+						"DevolucaoCartao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AcessosPorEmpresaLotacaoSecao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  cmd: 'acessosPorSecao',\n  token: 'wk8kytMkOXJgKR3Sqh0J8g==',\n  dataInicio: '2018-03-01',\n  dataFim: '2020-04-29',\n  soVisitantes: true,\n  mostrarPlacas: true,\n  soVeiculos: true,\n  codELS: '2',\n  tipo: 'empresa'\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3333/Relatorio/AcessosPorSecao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"Relatorio",
+						"AcessosPorSecao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AcessoPorColetor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cmd\":\"acessosPorColetor\",\"token\":\"VhA1uoN7zoXXK3oLmG6Qg==\",\"pessoas\":{\"pessoav\":\"25503,15201,15202,17050,28428,27131,20049,21543\",\"secaov\":\"\",\"lotacaov\":\"\",\"empresav\":\"\"},\"locaisAcesso\":\"3,6,5,4,15,12,16,17,10,14,9,7,8,11,13\",\"dataInicio\":null,\"dataFim\":null,\"incluirVisitantes\":true,\"incluirDesativados\":true}"
+				},
+				"url": {
+					"raw": "http://localhost:3333/Relatorio/AcessosPorLocal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"Relatorio",
+						"AcessosPorLocal"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
